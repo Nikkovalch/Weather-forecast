@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Oswald&display=swap");
+body {
+}
+
+.wrapper {
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e9f5fa;
+  gap: 50px;
+}
+
+body > svg {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cloudy {
+}
+.day__date {
+}
+.date {
+  font-family: "Krona One";
+  font-weight: 400;
+  text-align: center;
+  color: #4db0d3;
+}
+.date-day {
+  font-size: 1.5rem;
+  line-height: calc(40 / 31.6172 * 100%);
+  letter-spacing: 0.2em;
+}
+.date-number {
+  font-weight: 400;
+  font-size: 96.5774px;
+  line-height: calc(121 / 96.5774 * 100%);
+}
+/* ------------------- */
+.day__block {
+  width: 217.37px;
+  height: 691.63px;
+  background: var(--backColor);
+  box-shadow: 0px 5.26953px 5.26953px rgba(0, 0, 0, 0.25),
+    14.4912px 5.26953px 44.791px rgba(32, 77, 92, 0.7);
+  border-radius: 65.8692px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 32.45px ;
+}
+.weather {
+  height: 320px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.weather svg {
+  position: absolute;
+}
+.rainy svg {
+  top: -20px;
+  left: 35px;
+}
+.partly-cloudy svg,
+.stormy svg,
+.cloudy svg {
+  left: -30px;
+}
+/* ------------------- */
+
+.temperatura {
+  padding: 0px 0 0 0;
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 144.912px;
+  color: var(--temperatura) ;
+  text-align: center;
+  margin: 0 0 35.63px 0;
+  position: relative;
+}
+/* ------------------- */
+.content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 29.8686px;
+  line-height: 44px;
+  color: var(--content);
+}
+.humidity {
+  display: flex;
+  gap: 10px;
+}
+.celsius {
+  display: flex;
+}
+
+/* -------------------- */
+
+.deg {
+  position: absolute;
+  top: -15px;
+  right: 15px;
+  font-size: 62px;
+} 
+/* -----------Фонові налаштування------------------- */
+
+
+.cloudy {
+  --backColor: #4DB0D3;
+  --temperatura: #E6DF95;
+  --content: #D3EBF4;
+}
+.sunny {
+  --backColor: #E6DF95;
+  --temperatura: #4DB0D3;
+  --content: #247490;;
+}
+.stormy {
+  --backColor: #0E2E3A;
+  --temperatura: #E6DF95;
+  --content: #D3EBF4;
+}
+.snowy {
+  --backColor:  #BCE1EF;
+  --temperatura: #0E2E3A;
+  --content: #247490;;
+}
+.partly-cloudy {
+  --backColor:  #4DB0D3;
+  --temperatura: #E6DF95;
+  --content: #D3EBF4;
+}
+.rainy {
+  --backColor:  #2B8BAD;
+  --temperatura: #E6DF95;
+  --content: #D3EBF4;
+}
